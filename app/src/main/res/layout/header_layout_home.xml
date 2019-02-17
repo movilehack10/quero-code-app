@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_type_teal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imb_foto_perfil"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:src="@drawable/account_circle"
+        android:tint="@color/branco"
+        android:backgroundTint="@color/branco"
+        app:civ_border_color="@color/branco"
+        android:layout_marginBottom="10dp"
+        app:civ_border_width="0.5dp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imb_foto_perfil_profissional"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:src="@drawable/store"
+        android:tint="@color/branco"
+        android:visibility="gone"
+        app:civ_border_color="@color/branco"
+        android:layout_marginBottom="10dp"
+        app:civ_border_width="0.5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1.0"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txt_usuario_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="3dp"
+            android:text="NOME USUÁRIO"
+            android:textColor="@color/branco"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_tipo_conta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="3dp"
+            android:text="CONTA PESSOAL"
+            android:textColor="@color/green_50"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/green_200"></View>
+    <Button
+        android:id="@+id/b_seja_conta_profissional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MUDAR PARA CONTA PROFISSIONAL"
+        android:padding="10dp"
+        android:layout_gravity="left"
+        android:textColor="@color/branco"
+        android:background="@android:color/transparent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/green_200"></View>
+
+</LinearLayout>

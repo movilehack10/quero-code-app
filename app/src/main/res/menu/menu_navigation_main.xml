@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_carteira"
+        android:icon="@drawable/wallet"
+        android:iconTint="@color/green_900_dark"
+        android:title="Carteira" />
+
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/account_edit"
+        android:iconTint="@color/green_900_dark"
+        android:title="Editar perfil" />
+
+    <item
+        android:id="@+id/nav_perfil_comercial"
+        android:icon="@drawable/briefcase_edit"
+        android:title="Editar perfil"
+        android:iconTint="@color/green_900_dark"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/nav_mapa"
+        android:icon="@drawable/map_marker_multiple"
+        android:iconTint="@color/green_900_dark"
+        android:title="Mapa" />
+
+    <item
+        android:id="@+id/nav_promocoes"
+        android:icon="@drawable/ticket_percent"
+        android:iconTint="@color/green_900_dark"
+        android:title="Promoções"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/nav_analitica"
+        android:icon="@drawable/chart_bar"
+        android:iconTint="@color/green_900_dark"
+        android:title="Informações"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/nav_add_cartao"
+        android:icon="@drawable/credit_card_plus"
+        android:iconTint="@color/green_900_dark"
+        android:title="Adicionar cartão"/>
+</menu>

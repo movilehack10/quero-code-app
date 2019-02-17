@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_50"
+    android:orientation="vertical"
+    tools:context=".fragments.CarteiraFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/green_900_dark"
+        android:elevation="4dp"
+        android:gravity="right"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/green_900_dark">
+
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Theme"
+            android:text="Carteira"
+            android:textColor="@color/branco" />
+
+        <RelativeLayout
+            android:id="@+id/notification"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center">
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/branco"
+        android:elevation="2dp"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTitleSaldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:padding="20dp"
+                android:text="Saldo disponível"
+                android:textColor="@color/grey_900"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSaldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:padding="20dp"
+                android:text="R$ -,--"
+                android:textColor="@color/grey_900"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/b_home_add_cartao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/credit_card_plus"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/grey_600"
+                android:gravity="left"
+                android:padding="20dp"
+                android:text="Adicionar cartão"
+                android:textColor="@color/grey_600"
+                android:textSize="20dp" />
+        </TableRow>
+
+    </LinearLayout>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="1dp">
+
+        <Button
+            android:id="@+id/b_receber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/b_branco"
+            android:drawableLeft="@drawable/qrcode_scan"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/grey_800"
+            android:gravity="left"
+            android:padding="20dp"
+            android:text="Receber"
+            android:textColor="@color/grey_800"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/b_pagar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/b_pagar"
+            android:drawableLeft="@drawable/qrcode"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/branco"
+            android:gravity="left"
+            android:padding="20dp"
+            android:text="Pagar"
+            android:textColor="@color/branco"
+            android:textSize="20dp" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/lv_compras"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/branco">
+
+    </ListView>
+
+</LinearLayout>

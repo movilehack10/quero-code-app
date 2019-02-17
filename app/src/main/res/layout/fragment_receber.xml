@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/green_50"
+    android:orientation="vertical"
+    tools:context=".fragments.CarteiraFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/green_900_dark"
+        android:elevation="4dp"
+        android:gravity="right"
+        app:title="Receber"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/branco">
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Theme"
+            android:textColor="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/branco"
+        android:padding="15dp"
+        android:layout_margin="20dp"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qual o valor?"
+            android:textColor="@color/grey_900"
+            android:textSize="50sp"/>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ "
+                android:textColor="@color/grey_600"
+                android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/edtValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:layout_marginTop="20dp"
+            android:gravity="right"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/grey_600"
+            android:textSize="20sp"
+            android:inputType="numberDecimal"/>
+        </TableRow>
+
+
+    <Button
+        android:id="@+id/b_ler_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/qrcode_scan"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/grey_600"
+        android:drawableTint="@color/grey_600"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/b_receber"
+        android:text="Ler"/>
+
+</LinearLayout>
+</LinearLayout>
